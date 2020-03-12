@@ -1,11 +1,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Adicionar meio de pagamento</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="flex-container">
@@ -19,33 +19,31 @@
                         <div class="line"></div>
                     </div>
                     <div class="logo">
-                        <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"
-                             alt=""/>
+                        <img alt=""
+                             src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"/>
                     </div>
                     <div id="number">
-                        <input placeholder="0000" maxlength="4" type="password"></input><input placeholder="0000"
-                                                                                               maxlength="4"
-                                                                                               type="password"></input><input
-                            placeholder="0000" maxlength="4" type="password"></input><input placeholder="0000"
-                                                                                            maxlength="4"
-                                                                                            type="password"></input>
+                        <input maxlength="4" placeholder="0000" type="password" />
+                        <input maxlength="4" placeholder="0000" type="password" />
+                        <input maxlength="4" placeholder="0000" type="password" />
+                        <input maxlength="4" placeholder="0000" type="password" />
                     </div>
-                    <input id="show" type="checkbox"/>
+                    <input id="show" type="checkbox" />
                     <label for="show"></label>
                     <div id="holder">
-                        <input placeholder="NOME NO CARTAO" maxlength="16"></input>
+                        <input maxlength="16" placeholder="NOME NO CARTAO">
                     </div>
                     <div id="date">
-                        <input placeholder="05" maxlength="2"></input>
+                        <input maxlength="2" placeholder="05" />
                         <span>/</span>
-                        <input placeholder="16" maxlength="2"></input>
+                        <input maxlength="2" placeholder="16" />
                     </div>
                 </div>
                 <div class="back">
                     <div id="cardline"></div>
                     <div id="cvv">
                         <span>&#x275A;&#x275A;&#x275A;</span>
-                        <input placeholder="123" maxlength="3"></input>
+                        <input maxlength="3" placeholder="123">
                     </div>
                 </div>
                 <input class="sumbit" type="submit" value="adicionar"/>
@@ -57,8 +55,8 @@
             <div class="wrapper active">
                 <div class="item">
                     <div class="logo">
-                        <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"
-                             alt=""/>
+                        <img alt=""
+                             src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"/>
                     </div>
                     <p>
                         <strong>MasterCard final 1234</strong><br>
@@ -71,8 +69,8 @@
 
                 <div class="item active margin">
                     <div class="logo">
-                        <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"
-                             alt=""/>
+                        <img alt=""
+                             src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"/>
                     </div>
                     <p>
                         <strong>MasterCard final 1234</strong><br>
@@ -84,8 +82,8 @@
                 </div>
                 <div class="item">
                     <div class="logo">
-                        <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"
-                             alt=""/>
+                        <img alt=""
+                             src="https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png"/>
                     </div>
                     <p>
                         <strong>MasterCard final 1234</strong><br>
@@ -101,5 +99,6 @@
     </div>
 </div>
 
+<script src="./js/addcard.js" ></script>
 </body>
 </html>	

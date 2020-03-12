@@ -81,7 +81,7 @@ body {
 }
 
 #number {
-    margin: 60px 0 40px;
+    margin: 30px 0 30px;
     position: relative;
     display: inline-block;
 }
@@ -95,7 +95,7 @@ body {
 
 #number input {
     font-size: 30px;
-    width: 90px;
+    width: 80px;
     outline: none;
     border: none;
 }
@@ -265,7 +265,7 @@ input[type=checkbox] {
 input[type=checkbox] + label:before {
     cursor: pointer;
     opacity: 0.4;
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     display: inline-block;
     font-size: 22px;
     content: "\f070";
