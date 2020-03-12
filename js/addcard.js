@@ -58,7 +58,7 @@ const deselectItem = function (el) {
 const addEventOnListOfCards = function(el) {
     el.addEventListener('click', function (e) {
         e.preventDefault();
-        let sibling = el.parentElement.firstElementChild;
+        let sibling = el.parentElement ? el.parentElement.firstElementChild : false;
         while (sibling) {
             if (sibling !== el) {
                 deselectItem(sibling);
@@ -69,6 +69,24 @@ const addEventOnListOfCards = function(el) {
     });
 };
 
-for( let i = 0; i < listOfCards.length; i++) {
-    addEventOnListOfCards(listOfCards[i]);
+const updateEventOnListOfCards = function () {
+    for( let i = 0; i < listOfCards.length; i++) {
+        addEventOnListOfCards(listOfCards[i]);
+    }
+};
+updateEventOnListOfCards();
+
+// Resposta da Q5
+const btnRemoveCard = document.querySelectorAll('.close');
+
+const updateEventOnRemoveCardButtons = function () {
+    for (let i = 0; i < btnRemoveCard.length; i++) {
+        btnRemoveCard[i].addEventListener('click', function (e) {
+            const itemFather = btnRemoveCard[i].parentElement;
+            itemFather.parentElement.removeChild(itemFather);
+        })
+    }
 }
+
+updateEventOnRemoveCardButtons();
+
