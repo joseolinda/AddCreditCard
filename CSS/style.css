@@ -232,7 +232,7 @@ body {
     background: black;
 }
 
-.sumbit {
+.submit {
     position: absolute;
     top: 460px;
     left: 100px;
@@ -251,7 +251,7 @@ body {
     transition: all 0.3s;
 }
 
-.sumbit:hover {
+.submit:hover {
     background: #00f0ff;
     -webkit-transform: rotateY(15deg);
     transform: rotateY(15deg);
