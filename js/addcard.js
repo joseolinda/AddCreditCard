@@ -35,3 +35,40 @@ btnAdicionar.addEventListener('click', function (e) {
         }
     }
 });
+
+// Resposta da Q3
+
+// Respostas da Q4
+const listOfCards = document.querySelectorAll('#card-lists .wrapper .item');
+
+const selectItem = function (el) {
+    el.classList.add('active', 'margin');
+    el.querySelector('.close').classList.add('show');
+};
+
+const deselectItem = function (el) {
+    if(el.classList.contains('active')) {
+        el.classList.remove('active', 'margin');
+        el.querySelector('.close').classList.remove('show');
+    } else {
+        return undefined;
+    }
+};
+
+const addEventOnListOfCards = function(el) {
+    el.addEventListener('click', function (e) {
+        e.preventDefault();
+        let sibling = el.parentElement.firstElementChild;
+        while (sibling) {
+            if (sibling !== el) {
+                deselectItem(sibling);
+            }
+            sibling = sibling.nextElementSibling;
+        }
+        selectItem(el);
+    });
+};
+
+for( let i = 0; i < listOfCards.length; i++) {
+    addEventOnListOfCards(listOfCards[i]);
+}
